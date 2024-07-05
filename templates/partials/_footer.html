@@ -1,0 +1,25 @@
+<!-- templates/partials/footer.html -->
+{% load static %}
+
+<!-- MAIN FOOTER -->
+<footer class="mt-2">
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <div>
+          <menu class="footer-ul d-flex flex-wrap">
+            <li class="list-item-0">
+              <img
+                src="{% static 'images/dark-linkedin-logo-img.png' %}"
+                alt="LinkedIn logo"
+                class="linkedin-logo"
+              />
+              <span class="copyright-span">&copy; {% now 'Y' %}</span>
+            </li>
+            <!-- Generate rest of links using JavaScript - see index.js MAIN FOOTER -->
+          </menu>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

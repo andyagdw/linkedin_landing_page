@@ -1,0 +1,32 @@
+<!-- templates/partials/_navbar.html -->
+{% load static %}
+
+<!-- NAVBAR -->
+<nav class="mb-5">
+  <div class="container-xl">
+    <div
+      class="row navbar-row-container d-flex justify-content-between justify-content-lg-evenly"
+    >
+      <div class="col-2 col-lg-1 offset-lg-1 d-flex align-items-center">
+        <a href="#">
+          <img
+            src="{% static 'images/light-linkedin-logo-img.png' %}"
+            alt="Linkedin logo"
+            class="linkedin-logo"
+          />
+        </a>
+      </div>
+      <div class="col-12 order-3 order-lg-2 col-lg-7 d-flex justify-content-center justify-content-lg-end">
+        <menu class="navbar-menu d-flex h-100 py-4 py-lg-0">
+          <!-- Generate navbar links and icons using JavaScript - see index.js NAVBAR -->
+        </menu>
+      </div>
+      <div
+        class="col-7 order-2 order-lg-3 col-lg-3 d-flex align-items-center justify-content-end justify-content-lg-start"
+      >
+        <a href="#" class="all-a-link-btn-styling me-2 nav-join-now-link">Join now</a>
+        <a href="#" class="nav-sign-in-link all-a-link-btn-styling">Sign in</a>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,51 @@
+<!-- linkedin_app/templates/linkedin_app/partials/_carousel.html -->
+{% load static %}
+
+<!-- CAROUSEL -->
+<section class="section-spacing carousel-section">
+  <div class="container-xl h-100 py-3 py-sm-0">
+    <div class="row h-100">
+      <div class="col-lg-11 offset-lg-1 h-100 d-flex align-items-center">
+        <div class="carousel-container">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
+            <div 
+              id="carousel-inner-container"
+              class="carousel-inner"
+              data-img-one="{% static 'images/linkedin-img-2.png' %}"
+              data-img-two="{% static 'images/linkedin-img-3.png' %}"
+              data-img-three="{% static 'images/linkedin-img-4.png' %}"
+              >
+              <!-- Generate carousel items using JavaScript - see index.js CAROUSEL -->
+            </div>
+            <a
+              class="carousel-control-prev arrow-container"
+              href="#carouselExampleControls"
+              role="button"
+              onclick="displayArrowImgPrev()"
+              data-bs-slide="prev"
+            >
+              <img
+                src="{% static 'images/carousel-left-arrow-img.png' %}"
+                alt="Left arrow"
+                class="carousel-control-img"
+              />
+            </a>
+            <a
+              class="carousel-control-next arrow-container"
+              href="#carouselExampleControls"
+              role="button"
+              onclick="displayArrowImgNext()"
+              data-bs-slide="next"
+            >
+              <img
+                src="{% static 'images/carousel-right-arrow-img.png' %}"
+                alt="Right arrow"
+                class="carousel-control-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

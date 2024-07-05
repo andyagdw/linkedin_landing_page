@@ -1,0 +1,96 @@
+<!-- linkedin_app/templates/linkedin_app/partials/_hero.html -->
+{% load static %}
+
+<!-- HERO -->
+<section class="mb-5 hero-section-container">
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-1 offset-0">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="red-text display-4 mb-3">
+              Welcome to your professional community
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-3 py-0 py-md-2">
+            <div
+              class="hero-btn-text-container d-flex justify-content-center flex-column align-items-center"
+            >
+              <button class="d-block hero-btn btn-radius mb-3 google-img ps-3">
+                Continue with Google
+              </button>
+              <p class="text-center text-muted small-text hero-para">
+                By clicking Continue to join or sign in, you agree to
+                LinkedIn&apos;s
+                <a href="#" class="hero-links links-underline">User Agreement</a>, <a href="#" class="hero-links links-underline">Privacy Policy</a>,
+                and <a href="#" class="hero-links links-underline">Cookie Policy</a>.
+              </p>
+            </div>
+            <div class="login-divider-container">
+              <p class="login-divider-para">or</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 py-0 py-md-2">
+            <div class="form-container">
+              <form method="post">
+                {% csrf_token %} 
+                {% for field in form %}
+                <div class="form-group mb-3">
+                  <label for="{{ field.id_for_label }}" class="hero-label mb-2">
+                    {{ field.label }}
+                  </label>
+                  {% if field.label == 'Password' %}
+                  <div class="field-input-container position-relative d-flex rounded">
+                    {{ field }}
+                    <button
+                      type="button"
+                      class="show-hide-btn text-primary mx-3"
+                    >
+                      Show
+                    </button>
+                  </div>
+                  {% else %}
+                  <div class="field-input-container position-relative d-flex rounded">{{ field }}</div>
+                  {% endif %}
+                </div>
+                {% endfor %}
+                <p class="mb-4">
+                  <a href="#" class="hero-links links-underline">Forgot password?</a>
+                </p>
+                <div class="sign-in-btn-container">
+                  <button
+                    type="submit"
+                    class="border btn-radius sign-in-btn text-white p-2"
+                  >
+                    Sign in
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="new-to-linkedin-container">
+            <p class="text-center">
+              New to LinkedIn?
+              <a href="#" class="hero-links links-underline">Join now</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 d-flex justify-content-center align-items-center">
+        <div class="hero-img-container">
+          <img
+            src="{% static 'images/linkedin-img-1.svg '%}"
+            alt="man sitting on computer"
+            class="hero-img"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,613 @@
+/* ALL */
+
+:root {
+    --border-radius: 50px;
+    --section-spacing: 8rem;
+    --blue-btn-text-colour-hover: rgb(7 7 167);
+    --blue-btn-hover-background-colour: rgb(243 249 255);
+    --button-hover-colour: rgb(246 246 246);
+    --section-grey: rgb(242 241 241);
+    --blue-btn-text-colour: #008CC9;
+    --dark-blue-btn-background-colour: #0077B5;
+    --dark-blue-btn-hover-background-colour: #004471;
+    --orangish-red-text-colour: #AF4104;
+    --grey: #595C5F;
+    --hero-btn-grey: #515050;
+    --dark-black: #434649;
+    --black: #000;
+    --blue-btn-sign-in-show-all-colour: #0077B5;
+    --blue-btn-sign-in-show-all-text-colour-hover: #004471;
+    --font-weight-one: 500;
+    --font-weight-two: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+:is(ul, menu) > li {
+    list-style-type: none;
+}
+
+.footer-links:hover {
+    color: rgb(0 0 255);
+    text-decoration: underline;
+}
+
+.section-spacing {
+    margin-top: var(--section-spacing);
+}
+
+.a-link-grey-btn-styling {
+    font-weight: var(--font-weight-two);
+    color: rgb(61, 60, 60);
+    background-color: transparent;
+}
+
+.a-link-grey-btn-styling:hover {
+    background-color: var(--button-hover-colour);
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.blue-btn {
+    color: var(--blue-btn-sign-in-show-all-colour);
+    font-weight: var(--font-weight-two);
+}
+
+.blue-btn:hover {
+    color: var(--blue-btn-sign-in-show-all-text-colour-hover);
+    background-color: var(--blue-btn-hover-background-colour);
+}
+
+.dark-blue-btn {
+    border-radius: var(--border-radius);
+    font-weight: var(--font-weight-two);
+    background-color: var(--dark-blue-btn-background-colour);
+    line-height: 2.4;
+}
+
+.dark-blue-btn:hover {
+    background-color: rgb(14, 14, 207);
+    text-decoration: none;
+}
+
+.red-text {
+    color: var(--orangish-red-text-colour);
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.all-a-link-btn-styling {
+    padding: 0.7em 1.4em;
+    border-radius: var(--border-radius);
+    border: 1.5px solid;
+}
+
+.links-underline:hover {
+    text-decoration: underline;
+}
+
+/* NAVBAR */
+
+.navbar-menu > li {
+    display: inline;
+}
+
+.navbar-link {
+    color: rgb(102, 102, 102);
+}
+
+.navbar-link > i {
+    font-size: 1.2rem;
+}
+
+.navbar-span {
+    font-size: 0.8rem;
+}
+
+.navbar-link:hover {
+    color: rgb(47, 45, 45);
+    text-decoration: none;
+}
+
+.nav-sign-in-link {
+    color: var(--blue-btn-sign-in-show-all-colour);
+    font-weight: var(--font-weight-two);
+}
+
+.nav-sign-in-link:hover {
+    background-color: var(--blue-btn-hover-background-colour);
+    color: var(--blue-btn-sign-in-show-all-text-colour-hover);
+    text-decoration: none;
+}
+
+.nav-join-now-link {
+    font-weight: var(--font-weight-two);
+    color: var(--dark-black);
+    border: none;
+}
+
+.nav-join-now-link:hover {
+    text-decoration: none;
+    background-color: var(--button-hover-colour);
+    color: var(--black);
+}
+
+/* HERO */
+
+.hero-section-container {
+    overflow-x: hidden;
+}
+
+.show-hide-btn {
+    border: none;
+    background-color: transparent;
+    font-weight: var(--font-weight-one);
+}
+
+.field-input-container {
+    outline: 1px solid black;
+}
+
+.field-input-container:hover {
+    background-color: rgb(247, 243, 243);
+    outline: 2.2px solid black; /* Use outline instead of border to not take up any space */
+}
+
+.field-input-container input {
+    position: relative;
+    z-index: 1; /* Bring input to the front */
+    background-color: transparent; /* Ensure input background is transparent so that div behind could show on hover */
+}
+
+.hero-label {
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-one);
+    color: var(--dark-black);
+}
+
+.hero-btn-text-container {
+    width: 24em;
+}
+
+.hero-links {
+    font-weight: var(--font-weight-two);
+    color: var(--blue-btn-text-colour);
+}
+
+.hero-btn {
+    border-radius: var(--border-radius);
+    line-height: 2.2;
+    background-color: transparent;
+    width: 100%;
+    font-weight: var(--font-weight-one);
+    font-size: 0.9rem;
+    color: var(--hero-btn-grey);
+    text-align: center;
+    padding: 0.2em 0;
+}
+
+.hero-btn:hover {
+    background-color: rgb(246, 250, 250);
+    outline: 0.8px solid var(--hero-btn-grey);
+}
+
+.google-img {
+    background-image: url('../images/google-img.png');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 28% 50%;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
+.sign-in-btn {
+    background-color: var(--dark-blue-btn-background-colour);
+    border-radius: var(--border-radius);
+    font-weight: var(--font-weight-one);
+}
+
+.sign-in-btn:hover {
+    background-color: var(--dark-blue-btn-hover-background-colour);
+}
+/* Code for text in middle divider */
+.login-divider-para {
+    overflow: hidden;
+    text-align: center;
+}
+
+.login-divider-para::before,
+.login-divider-para::after {
+    background-color: #a3a3a3;
+    content: "";
+    display: inline-block;
+    height: 0.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.login-divider-para::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.login-divider-para::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+/* End code */
+
+/* FIND THE RIGHT JOB */
+
+.show-more-btn {
+    padding: 0.4em 1em;
+}
+
+/* KEEP YOUR MIND */
+
+.post-your-job-container {
+    background-color: rgb(244, 236, 236);
+    overflow: hidden; /* Hide overflow for this container */
+}
+
+.post-a-job-blue-btn {
+    color: var(--dark-blue-btn-background-colour);
+    font-weight: var(--font-weight-two);
+    cursor: pointer;
+}
+
+.post-a-job-blue-btn:hover {
+    text-decoration: none;
+    background-color: rgb(224, 228, 231);
+    color: var(--dark-blue-btn-hover-background-colour);
+    border-color: var(--dark-blue-btn-background-colour);
+}
+
+/* CAROUSEL */
+
+.carousel-section {
+    background-color: var(--section-grey);
+}
+
+.carousel-para {
+    line-height: 1.2;
+}
+
+.arrow-container { /* Get rid of default stlying of a link */
+    opacity: 1;
+}
+
+.arrow-container:nth-of-type(1) {
+   width: 12%;
+   margin-left: -6%;
+}
+
+.arrow-container:nth-of-type(2) {
+   width: 12%;
+   margin-right: -2%;
+}
+
+.carousel-control-img {
+    width: 40px;
+}
+
+.carousel-control-img:hover {
+    opacity: 0.8;
+}
+
+/* CONNECT WITH PEOPLE */
+
+.connect-with-people-img-container {
+    width: 300px;
+    height: 300px;
+}
+
+.connect-with-people-link:hover {
+    text-decoration: none;
+}
+
+.skills-menu-dropdown {
+    max-height: 350px;
+    overflow-x: hidden;
+}
+
+.menu-span {
+    font-weight: var(--font-weight-one);
+}
+
+.skills-button:hover {
+    background-color: var(--button-hover-colour);
+    color: #000;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+/* WHO IS LINKEDIN */
+
+.who-is-linkedin-container {
+    overflow: hidden;
+}
+
+.who-is-linkedin-row {
+    background-color: var(--section-grey);
+}
+
+.who-is-linkedin-img {
+    width: 800px;
+    height: 800px;
+    margin-left: 8em;
+}
+
+.who-is-linked-links {
+    color: #151313;
+    background-color: rgb(238, 230, 230);
+}
+
+.who-is-linked-links:hover {
+    text-decoration: none;
+    background-color: rgb(229, 220, 220);
+}
+
+.who-is-linked-arrow {
+    margin-right: 1em;
+    font-size: 1.5rem;
+}
+
+/* JOIN YOUR COLLEAGUES */
+
+.join-your-colleagues-section-container {
+    overflow: hidden;
+}
+
+.get-started-btn {
+    border-radius: var(--border-radius);
+    font-weight: var(--font-weight-two);
+    background-color: var(--dark-blue-btn-background-colour);
+    line-height: 2.4;
+}
+
+.get-started-btn:hover {
+    background-color: var(--dark-blue-btn-hover-background-colour);
+    text-decoration: none;
+}
+
+/* SECONDARY FOOTER */
+
+.linkedin-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.secondary-section-container {
+    background-color: var(--section-grey);
+}
+
+.secondary-footer-links {
+    font-weight: var(--font-weight-one);
+    font-size: 0.9rem;
+    color: var(--grey);
+}
+
+/* MAIN FOOTER */
+
+.footer-ul > li {
+    display: inline-block;
+}
+
+.main-footer-links {
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-one);
+    color: var(--grey);
+}
+
+.main-footer-links:hover {
+    color: #004471;
+}
+
+.copyright-span {
+    color: var(--grey);
+    font-size: 0.74em;
+    font-weight: 200;
+}
+
+.footer-icon {
+    color: var(--grey);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 280px) { /* Less than small */
+    /* NAVBAR */
+
+    .navbar-menu > li:not(.navbar-menu > li:last-child) {
+        margin-right: 2em;
+    }
+
+    .navbar-menu > li:last-child {
+        border-left: 1px solid rgba(102 102 102 / 0.3);
+    }
+
+    /* HERO */
+    .hero-btn-text-container {
+        margin: 0 auto;
+    }
+
+    :is(.form-container, .new-to-linkedin-container, .sign-in-btn, .sign-in-btn-container) {
+        width: 100%;
+    }
+
+    .hero-img-container {
+        margin-left: 0;
+    }
+
+    .hero-img {
+        width: 25em;
+        height: 15em;
+    }
+
+    /* CONNECT WITH PEOPLE */
+    .skills-button {
+        width: 100%;
+    }
+
+    /* JOIN YOUR COLLEAGUES */
+    .join-your-colleagues-section-container::after { /* Remove background img: see 'base.html' */
+        display: none;
+    }
+
+    /* CAROUSEL */
+    .carousel-section {
+        height: fit-content;
+    }
+
+    .carousel-text-img-container {
+        width: 100%;
+    }
+
+    .carousel-img {
+        height: 300px;
+        width: 300px;
+    }
+
+    /* WHO IS LINKEDIN */
+    .who-is-linkedin-menu {
+        width: 95%;
+    }
+
+    .who-is-linkedin-row {
+        height: 100%;
+    }
+
+     .who-is-linkedin-content-container {
+        margin-top: 0;
+    }
+
+    /* MAIN FOOTER */
+    .footer-ul > li {
+        width: 50%;
+        margin-right: 0;
+        padding: 0.5em;
+    }
+}
+
+@media (min-width: 576px) { /* Small */
+    /* CONNECT WITH PEOPLE */
+    .skills-button {
+        width: 90%;
+    }
+
+    /* CAROUSEL */
+    .carousel-section {
+        height: 48em;
+    }
+
+    .carousel-text-img-container {
+        width: 50%;
+    }
+
+    .carousel-img {
+        height: 400px;
+        width: 400px;
+    }
+
+    /* WHO IS LINKEDIN */
+    .who-is-linkedin-menu {
+        width: 88%;
+    }
+}
+
+@media (min-width: 768px) {  /* Medium */
+    /* HERO */
+    .sign-in-btn-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /* CONNECT WITH PEOPLE */
+    .skills-menu-dropdown {
+        width: 90%;
+    }
+
+    /* JOIN YOUR COLLEAGUES */
+    .join-your-colleagues-section-container {
+        height: 44em;
+    }
+
+    .join-your-colleagues-section-container::after { /* Style background img */
+        content: "";
+        display: block;
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    /* MAIN FOOTER */
+    .footer-ul > li {
+        width: initial;
+        margin-right: 1em;
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {  /* Large */
+    /* NAVBAR */
+    .navbar-menu > li:last-child {
+        border-left: 0;
+        border-inline: 1px solid rgba(102 102 102 / 0.3);
+    }
+
+    .navbar-menu > li:not(.navbar-menu > li:last-child) {
+        margin-right: 2.5em;
+    }
+    /* HERO */
+    .hero-btn-text-container {
+        margin: 0;
+    }
+    
+    :is(.form-container, .new-to-linkedin-container, .login-divider-container) {
+        width: 24em;
+    }
+
+    .sign-in-btn-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hero-img-container {
+        margin-left: 3.2em;
+    }
+
+    .hero-img {
+        width: 700px;
+        height: 550px;
+    }
+
+    /* WHO IS LINKEDIN */
+    .who-is-linkedin-row {
+        height: 90%;
+    }
+
+    .who-is-linkedin-content-container {
+        margin-top: 10em;
+    }
+}
