@@ -1,8 +1,7 @@
 # LinkedIn landing page clone 💥
 
 This project is a clone of the LinkedIn landing page built using Django. It aims to mimic the look
-and feel of LinkedIn's homepage, providing a platform to practice and showcase Django development
-skills 😁.
+and feel of LinkedIn's homepage, providing a platform to practise and showcase my web development skills 😁.
 
 ## Technologies 💻
 
