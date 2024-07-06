@@ -18,14 +18,21 @@
             <div
               class="hero-btn-text-container d-flex justify-content-center flex-column align-items-center"
             >
-              <button class="d-block hero-btn btn-radius mb-3 google-img ps-3">
-                Continue with Google
-              </button>
+              <div class="d-block hero-btn btn-radius mb-3 position-relative" role="button">
+                <div class="hero-btn-inner-div position-absolute"></div>
+                <span class="hero-btn-text d-block google-img position-relative"
+                  >Continue with Google</span
+                >
+              </div>
               <p class="text-center text-muted small-text hero-para">
                 By clicking Continue to join or sign in, you agree to
                 LinkedIn&apos;s
-                <a href="#" class="hero-links links-underline">User Agreement</a>, <a href="#" class="hero-links links-underline">Privacy Policy</a>,
-                and <a href="#" class="hero-links links-underline">Cookie Policy</a>.
+                <a href="#" class="hero-links links-underline">User Agreement</a
+                >,
+                <a href="#" class="hero-links links-underline">Privacy Policy</a
+                >, and
+                <a href="#" class="hero-links links-underline">Cookie Policy</a
+                >.
               </p>
             </div>
             <div class="login-divider-container">
@@ -44,7 +51,9 @@
                     {{ field.label }}
                   </label>
                   {% if field.label == 'Password' %}
-                  <div class="field-input-container position-relative d-flex rounded">
+                  <div
+                    class="field-input-container position-relative d-flex rounded"
+                  >
                     {{ field }}
                     <button
                       type="button"
@@ -54,12 +63,18 @@
                     </button>
                   </div>
                   {% else %}
-                  <div class="field-input-container position-relative d-flex rounded">{{ field }}</div>
+                  <div
+                    class="field-input-container position-relative d-flex rounded"
+                  >
+                    {{ field }}
+                  </div>
                   {% endif %}
                 </div>
                 {% endfor %}
                 <p class="mb-4">
-                  <a href="#" class="hero-links links-underline">Forgot password?</a>
+                  <a href="#" class="hero-links links-underline"
+                    >Forgot password?</a
+                  >
                 </p>
                 <div class="sign-in-btn-container">
                   <button
