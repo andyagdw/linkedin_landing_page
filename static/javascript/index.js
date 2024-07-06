@@ -146,7 +146,7 @@ for (let x of findTheRightJobATagNames) {
 }
 
 const showMoreBtn = document.querySelector(".show-more-btn");
-showMoreBtn.addEventListener("click", function () {
+showMoreBtn.addEventListener("click", () => {
   if (showMoreBtn.classList.contains("active")) {
     // If 'show more' button has been clicked
     let showMoreBtns = document.querySelectorAll(".show-more-a-links"); // Get all show more a links
@@ -286,7 +286,7 @@ const carouselData = [
 const carouselInnerContainer = document.getElementById(
   "carousel-inner-container"
 );
-const imgsObj = carouselInnerContainer.dataset; // Get images
+const imgsObj = carouselInnerContainer.dataset;  // Get images, see 'carousel.html'
 const imgsArr = []; // Store images
 for (let val in imgsObj) {
   imgsArr.push(val);
@@ -438,7 +438,7 @@ const secondaryFooterLinksContainer = document.querySelector(
   ".secondary-footer-links-container"
 );
 
-const secondaryFooterObj = [
+const secondaryFooterData = [
   {
     heading: "General",
     links: [
@@ -490,20 +490,20 @@ const secondaryFooterObj = [
 ];
 
 // Create secondary footer links here
-for (let i = 0; i < secondaryFooterObj.length; i++) {
+for (let i = 0; i < secondaryFooterData.length; i++) {
   let div = document.createElement("div");
   div.className = `secondary-footer-links-div-${i}`;
   let ul = document.createElement("ul");
   ul.className = `ps-0 secondary-footer-links-ul-${i}`;
   let h3 = document.createElement("h3");
   h3.className = "mt-2 mt-lg-0 h6";
-  h3.innerHTML = secondaryFooterObj[i]["heading"];
+  h3.innerHTML = secondaryFooterData[i]["heading"];
 
   secondaryFooterLinksContainer.appendChild(div);
   div.appendChild(h3);
   div.appendChild(ul);
 
-  let secondaryFooterLinks = secondaryFooterObj[i]["links"];
+  let secondaryFooterLinks = secondaryFooterData[i]["links"];
 
   for (let x = 0; x < secondaryFooterLinks.length; x++) {
     let li = document.createElement("li");
@@ -574,7 +574,6 @@ window.addEventListener("load", function () {
     } else {
       heading.classList.remove("display-5");
       heading.classList.add("fs-1", "display-4");
-      // heading.classList.add("display-4");
       heading.style.fontWeight = "400";
     }
   }
@@ -619,7 +618,7 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener("resize", function () {
-  // Changing style of elements on window resize
+  // On resize add or remove classnames from elements if screen size reaches a certain breakpoint
   for (let heading of h2Headings) {
     if (screenSizeGreaterThanMedium.matches) {
       if (!heading.classList.contains("display-5")) {
@@ -644,7 +643,7 @@ window.addEventListener("resize", function () {
 
   if (screenSizeGreaterThanSmall.matches) {
     if (!carouselParas[0].classList.contains("fs-2")) {
-      // Get first paragraph
+      // Get first element
       for (let para of carouselParas) {
         para.classList.remove("fs-5");
         para.classList.add("fs-2");
@@ -679,7 +678,6 @@ window.addEventListener("resize", function () {
     }
   }
 
-  // Adjusting the 'JOIN YOUR COLLEAGUES' section depending on the screen size
   if (screenSizeGreaterThanMedium.matches) {
     if (!joinColleaguesSectionContainer.classList.contains("section-spacing")) {
       joinColleaguesSectionContainer.classList.remove("h-100", "py-5");

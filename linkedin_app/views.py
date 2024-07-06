@@ -25,7 +25,8 @@ def index(request: HttpRequest) -> HttpResponse:
 
     if request.method == 'POST':
         form = SignInForm(request.POST)
-        return redirect('linkedin_app:index')
+        if form.is_valid():
+            return redirect('linkedin_app:index')
 
     else:
         form = SignInForm()
