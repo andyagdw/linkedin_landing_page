@@ -8,8 +8,9 @@ current user interface**
 
 ## The User Interface
 
-![Screenshot 2024-07-26 192013](https://github.com/user-attachments/assets/dad5f7b9-7eca-4251-86c3-d0c2c46ce28d)
+Hero section:
 
+![Screenshot 2024-07-26 192013](https://github.com/user-attachments/assets/dad5f7b9-7eca-4251-86c3-d0c2c46ce28d)
 
 ## Technologies 💻
 
