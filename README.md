@@ -3,6 +3,9 @@
 This project is a clone of the LinkedIn landing page built using Django. It aims to mimic the look
 and feel of LinkedIn's homepage, providing a platform to practise and showcase my web development skills 😁.
 
+**Please note that this project was completed around the 1st July 2024. There may be changes to LinkedIn's
+current user interface**
+
 ## Technologies 💻
 
 * Python
