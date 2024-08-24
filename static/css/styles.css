@@ -315,16 +315,9 @@ input:focus {
 
 .arrow-container { /* Get rid of default stlying of a link */
     opacity: 1;
-}
-
-.arrow-container:nth-of-type(1) {
-   width: 12%;
-   margin-left: -6%;
-}
-
-.arrow-container:nth-of-type(2) {
-   width: 12%;
-   margin-right: -2%;
+    height: fit-content;
+    width: fit-content;
+    top: 45%;
 }
 
 .carousel-control-img {
@@ -333,6 +326,10 @@ input:focus {
 
 .carousel-control-img:hover {
     opacity: 0.8;
+}
+
+.carousel-control-prev {
+    display: none;
 }
 
 /* CONNECT WITH PEOPLE */

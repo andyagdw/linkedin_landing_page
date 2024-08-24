@@ -347,10 +347,10 @@ const displayArrowImgPrev = () => {
   let rightArrow = document.querySelector(".carousel-control-next");
 
   if (middleCarouselItem.classList.contains("active")) {
-    leftArrow.style.visibility = "hidden";
+    leftArrow.style.display = "none";
   } else {
-    leftArrow.style.visibility = "visible";
-    rightArrow.style.visibility = "visible";
+    leftArrow.style.display = "flex";
+    rightArrow.style.display = "flex";
   }
 };
 
@@ -360,10 +360,10 @@ const displayArrowImgNext = () => {
   let leftArrow = document.querySelector(".carousel-control-prev");
 
   if (middleCarouselItem.classList.contains("active")) {
-    rightArrow.style.visibility = "hidden";
+    rightArrow.style.display = "none";
   } else {
-    rightArrow.style.visibility = "visible";
-    leftArrow.style.visibility = "visible";
+    rightArrow.style.display = "flex";
+    leftArrow.style.display = "flex";
   }
 };
 
@@ -612,9 +612,6 @@ window.addEventListener("load", function () {
     whoIsLinkedInMainHeading.style.fontWeight = "600";
   }
 
-  // Hide left arrow on load
-  let leftArrow = document.querySelector(".carousel-control-prev");
-  leftArrow.style.visibility = "hidden";
 });
 
 window.addEventListener("resize", function () {
