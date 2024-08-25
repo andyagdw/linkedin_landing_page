@@ -376,7 +376,7 @@ const skillsMenuList = [
   ["Career Development", "590+ courses"],
   ["Customer Service", "220+ courses"],
   ["Diversity, Equity and Inclusion (DEI)", "300+ courses"],
-  ["Finance and Accouting", "280+ courses"],
+  ["Finance and Accounting", "280+ courses"],
   ["Human Resources", "510+ courses"],
   ["Leadership and Management", "1,850+ courses"],
   ["Marketing", "970+ courses"],
