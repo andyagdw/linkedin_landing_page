@@ -53,7 +53,7 @@ a {
 
 .a-link-grey-btn-styling:hover {
     background-color: var(--button-hover-colour);
-    color: #000;
+    color: var(--black);
     cursor: pointer;
     text-decoration: none;
 }
@@ -161,12 +161,12 @@ input:focus {
 }
 
 .field-input-container {
-    outline: 1px solid black;
+    outline: 1px solid var(--black);
 }
 
 .field-input-container:hover {
     background-color: rgb(247, 243, 243);
-    outline: 2.2px solid black; /* Use outline instead of border to not take up any space */
+    outline: 2.2px solid var(--black); /* Use outline instead of border to not take up any space */
 }
 
 .field-input-container input {
@@ -354,7 +354,7 @@ input:focus {
 
 .skills-button:hover {
     background-color: var(--button-hover-colour);
-    color: #000;
+    color: var(--black);
 }
 
 .dropdown-item:hover {
